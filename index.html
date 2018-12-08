@@ -20,14 +20,13 @@
     
     <script type="text/javascript">
         $('#clock').countdown('2019/01/01', function(event){
-            var clock = this.html(event.strftime(''
-                + '<div><span>%W</span><span>Weeks</span></div>'
-                + '<div><span>%D</span><span>Days</span></div>'
-                + '<div><span>%H</span><span>Hours</span></div>'
-                + '<div><span>%M</span><span>Minutes</span></div>'
-                + '<div><span>%S</span><span>Seconds</span></div>'
+            var clock = $(this).html(event.strftime(
+                '<div><span>%W</span> <span>Weeks</span></div>'
+                + '<div><span>%D</span> <span>Days</span></div>'
+                + '<div><span>%H</span> <span>Hours</span></div>'
+                + '<div><span>%M</span> <span>Minutes</span></div>'
+                + '<div><span>%S</span> <span>Seconds</span></div>'
                 ));
-            console.log(clock);
         });
     </script>
 </body>
