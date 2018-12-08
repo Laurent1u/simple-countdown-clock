@@ -12,5 +12,23 @@
         <h1><span>2019</span> New Year Countdown</h1>
         <div id="clock"></div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="countdown.js"></script>
+    
+    <script type="text/javascript">
+        $('#clock').countdown('2019/01/01', function(event){
+            var clock = this.html(event.strftime(''
+                + '<div><span>%W</span><span>Weeks</span></div>'
+                + '<div><span>%D</span><span>Days</span></div>'
+                + '<div><span>%H</span><span>Hours</span></div>'
+                + '<div><span>%M</span><span>Minutes</span></div>'
+                + '<div><span>%S</span><span>Seconds</span></div>'
+                ));
+            console.log(clock);
+        });
+    </script>
 </body>
 </html>
