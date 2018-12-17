@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Countdown 2019</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
     <div class="center">
@@ -18,7 +19,7 @@
     crossorigin="anonymous"></script>
     <script src="countdown.js"></script>
     
-    <script type="text/javascript">
+    <script type="text/javascript" async>
         $('#clock').countdown('2019/01/01', function(event){
             var clock = $(this).html(event.strftime(
                 '<div><span>%W</span> <span>Weeks</span></div>'
