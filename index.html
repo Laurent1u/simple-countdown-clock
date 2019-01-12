@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="center">
-        <h1><span>2</span><span>0</span><span>1</span><span>9</span><br>New Year Countdown</h1>
+        <h1><span>2</span><span>0</span><span>2</span><span>0</span><br>New Year Countdown</h1>
         <div id="clock"></div>
     </div>
 
@@ -20,9 +20,9 @@
     <script src="countdown.js"></script>
     
     <script type="text/javascript" async>
-        $('#clock').countdown('2019/01/01', function(event){
+        $('#clock').countdown('2020/01/01', function(event){
             var clock = $(this).html(event.strftime(
-                '<div><span>%W</span> <span>Weeks</span></div>'
+                '<div><span>%w</span> <span>Weeks</span></div>'
                 + '<div><span>%D</span> <span>Days</span></div>'
                 + '<div><span>%H</span> <span>Hours</span></div>'
                 + '<div><span>%M</span> <span>Minutes</span></div>'
