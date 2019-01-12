@@ -1,10 +1,110 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-body 
+body
 {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: #262626;
+}
+
+@media (min-device-width: 680px)
+{
+    h1 span
+    {
+        font-size: 5em;
+        line-height: .8em;
+        animation: animate 8s linear infinite;
+    }
+
+    h1
+    {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 4em;
+    }
+
+    #clock
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 570px;
+    }
+
+    #clock div
+    {
+        position: relative;
+        background: #262626;
+        color: #fff;
+        border: 2px solid #000;
+        width: 100px;
+        padding: 20px;
+        margin: 0 5px;
+    }
+
+    #clock div span:nth-child(1)
+    {
+        font-size: 48px;
+        font-weight: 800;
+    }
+
+    #clock div span:nth-child(2)
+    {
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: -10px;
+    }
+}
+
+@media (max-device-width: 680px)
+{
+    h1 span
+    {
+        font-size: 2em;
+        line-height: 1em;
+        animation: animate 8s linear infinite;
+    }
+
+    h1
+    {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 3em;
+    }
+
+    #clock
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 355px;
+    }
+
+    #clock div
+    {
+        position: relative;
+        background: #262626;
+        color: #fff;
+        border: 2px solid #000;
+        width: 50px;
+        padding: 5px;
+        margin: 0 5px;
+    }
+
+    #clock div span:nth-child(1)
+    {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #clock div span:nth-child(2)
+    {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: -10px;
+    }
 }
 
 .center
@@ -14,21 +114,6 @@ body
     width: 100%;
     transform: translateY(-50%);
     text-align: center;
-}
-
-h1
-{
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 4em;
-}
-
-h1 span
-{
-    font-size: 5em;
-    line-height: .8em;
-    animation: animate 6s linear infinite;
 }
 
 h1 span:nth-child(1)
@@ -71,24 +156,6 @@ h1 span:nth-child(4)
     }
 }
 
-#clock
-{
-    display: flex;
-    width: 570px;
-    margin: 0 auto;
-}
-
-#clock div
-{
-    position: relative;
-    width: 100px;
-    padding: 20px;
-    margin: 0 5px;
-    background: #262626;
-    color: #fff;
-    border: 2px solid #000;
-}
-
 #clock div:last-child
 {
     background: #e91e63;
@@ -109,17 +176,4 @@ h1 span:nth-child(4)
 {
     display: block;
     text-align: center;
-}
-
-#clock div span:nth-child(1)
-{
-    font-size: 48px;
-    font-weight: 800;
-}
-
-#clock div span:nth-child(2)
-{
-    font-size: 18px;
-    font-weight: 800;
-    margin-top: -10px;
 }
