@@ -62,7 +62,7 @@ body
     h1 span
     {
         font-size: 2em;
-        line-height: 1em;
+        line-height: 1.4em;
         animation: animate 8s linear infinite;
     }
 
@@ -88,7 +88,7 @@ body
         background: #262626;
         color: #fff;
         border: 2px solid #000;
-        width: 50px;
+        width: 60px;
         padding: 5px;
         margin: 0 5px;
     }
@@ -96,13 +96,14 @@ body
     #clock div span:nth-child(1)
     {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 800;
+        margin-top: 5px;
     }
 
     #clock div span:nth-child(2)
     {
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 800;
         margin-top: -10px;
     }
 }
