@@ -13,7 +13,7 @@ body
     {
         font-size: 5em;
         line-height: .8em;
-        animation: animate 8s linear infinite;
+        /* animation: animate 8s linear infinite; */
     }
 
     h1
@@ -63,7 +63,7 @@ body
     {
         font-size: 2em;
         line-height: 1.4em;
-        animation: animate 8s linear infinite;
+        /* animation: animate 8s linear infinite; */
     }
 
     h1
